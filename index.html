@@ -5,91 +5,78 @@
 <title>CV - Irmak Akbaş</title>
 
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #eaeaea;
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#e6e6e6;
+}
+.container{
+    width:950px;
+    margin:40px auto;
+    display:flex;
+    background:white;
 }
 
-.container {
-    width: 900px;
-    margin: 40px auto;
-    display: flex;
-    background: white;
+/* SOL */
+.left{
+    width:35%;
+    background:#2f2f2f;
+    color:white;
+    padding:30px;
+    box-sizing:border-box;
+}
+.photo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background:#555;
+    margin:0 auto 20px;
+}
+.left h3{
+    border-bottom:1px solid #777;
+    padding-bottom:5px;
+    margin-top:25px;
+}
+.left p, .left li{
+    font-size:14px;
+    line-height:1.6;
 }
 
-/* SOL TARAF */
-.left {
-    width: 35%;
-    background: #2f2f2f;
-    color: white;
-    padding: 30px;
-    box-sizing: border-box;
+/* SAĞ */
+.right{
+    width:65%;
+    padding:30px;
+    box-sizing:border-box;
 }
-
-/* FOTO BOŞ ALANI */
-.photo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background: #555;
-    margin: 0 auto 20px auto;
+.name{
+    font-size:32px;
+    font-weight:bold;
 }
-
-/* SOL BAŞLIKLAR */
-.left h3 {
-    border-bottom: 1px solid #777;
-    padding-bottom: 5px;
-    margin-top: 25px;
+.title{
+    color:gray;
+    margin-bottom:20px;
 }
-
-/* SAĞ TARAF */
-.right {
-    width: 65%;
-    padding: 30px;
-    box-sizing: border-box;
+.section{
+    margin-bottom:25px;
 }
-
-.name {
-    font-size: 32px;
-    font-weight: bold;
+.section h3{
+    border-bottom:1px solid #ccc;
+    padding-bottom:5px;
 }
-
-.title {
-    color: gray;
-    margin-bottom: 20px;
+.skill{
+    margin-top:8px;
 }
-
-/* İLETİŞİM */
-.contact p {
-    margin: 5px 0;
-    font-size: 14px;
+.bar{
+    height:6px;
+    background:#ddd;
 }
-
-/* BÖLÜMLER */
-.section {
-    margin-bottom: 25px;
+.fill{
+    height:6px;
+    width:70%;
+    background:#555;
 }
-
-.section h3 {
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
-}
-
-/* BECERİ ÇUBUKLARI */
-.skill {
-    margin-top: 10px;
-}
-
-.bar {
-    height: 6px;
-    background: #ddd;
-}
-
-.fill {
-    height: 6px;
-    width: 70%;
-    background: #555;
+ul{
+    padding-left:20px;
 }
 </style>
 </head>
@@ -98,62 +85,80 @@ body {
 
 <div class="container">
 
-    <!-- SOL -->
-    <div class="left">
-        <div class="photo"></div>
+<!-- SOL TARAF -->
+<div class="left">
 
-        <h3>HAKKIMDA</h3>
-        <p>
-            Bilişim Sistemleri ve Teknolojileri öğrencisiyim.
-            Teknoloji alanında kendimi geliştirmeye istekli,
-            öğrenmeye açık bir yapıya sahibim.
-        </p>
+    <div class="photo"></div>
 
-        <h3>EHLİYET</h3>
-        <p>B Sınıfı</p>
+    <h3>HAKKIMDA</h3>
+    <p>
+        Bilişim Sistemleri ve Teknolojileri öğrencisiyim.
+        Teknolojiye ilgili, öğrenmeye açık ve sorumluluk sahibi biriyim.
+    </p>
+
+    <h3>KİŞİSEL BİLGİLER</h3>
+    <p><b>Doğum Yeri:</b> Mersin</p>
+    <p><b>Medeni Durum:</b> Bekar</p>
+    <p><b>Ehliyet:</b> B Sınıfı</p>
+
+    <h3>YABANCI DİL</h3>
+    <p>İngilizce – Orta Seviye</p>
+
+    <h3>HOBİLER</h3>
+    <ul>
+        <li>Bilgisayar</li>
+        <li>Araştırma</li>
+        <li>İnternet Teknolojileri</li>
+    </ul>
+
+</div>
+
+<!-- SAĞ TARAF -->
+<div class="right">
+
+    <div class="name">IRMAK AKBAŞ</div>
+    <div class="title">ÖĞRENCİ</div>
+
+    <div class="section">
+        <h3>İLETİŞİM</h3>
+        <p>📍 Mersin / Erdemli</p>
+        <p>📞 +90 533 543 5073</p>
+        <p>📧 irmak@example.com</p>
     </div>
 
-    <!-- SAĞ -->
-    <div class="right">
+    <div class="section">
+        <h3>EĞİTİM BİLGİLERİ</h3>
+        <p>
+            Bilişim Sistemleri ve Teknolojileri (Lisans)<br>
+            2025 – Mersin
+        </p>
+    </div>
 
-        <div class="name">IRMAK AKBAŞ</div>
-        <div class="title">ÖĞRENCİ</div>
+    <div class="section">
+        <h3>İŞ DENEYİMİ</h3>
+        <p>Henüz yok</p>
+    </div>
 
-        <div class="contact">
-            <p>📍 Mersin / Erdemli</p>
-            <p>📞 +90 533 543 5073</p>
-            <p>📧 irmak@example.com</p>
-        </div>
+    <div class="section">
+        <h3>BİLGİSAYAR BECERİLERİ</h3>
 
-        <div class="section">
-            <h3>İŞ DENEYİMİ</h3>
-            <p>Henüz yok</p>
-        </div>
+        <div class="skill">HTML / CSS</div>
+        <div class="bar"><div class="fill"></div></div>
 
-        <div class="section">
-            <h3>EĞİTİM</h3>
-            <p>
-                Bilişim Sistemleri ve Teknolojileri (Lisans)<br>
-                2025 – Mersin
-            </p>
-        </div>
+        <div class="skill">Ofis Programları</div>
+        <div class="bar"><div class="fill"></div></div>
 
-        <div class="section">
-            <h3>BECERİLER</h3>
+        <div class="skill">Temel Programlama</div>
+        <div class="bar"><div class="fill"></div></div>
+    </div>
 
-            <div class="skill">Yaratıcılık</div>
-            <div class="bar"><div class="fill"></div></div>
-
-            <div class="skill">Uyarlanabilirlik</div>
-            <div class="bar"><div class="fill"></div></div>
-
-            <div class="skill">Sorun Çözme</div>
-            <div class="bar"><div class="fill"></div></div>
-        </div>
-
+    <div class="section">
+        <h3>REFERANS</h3>
+        <p>İstenildiğinde verilecektir.</p>
     </div>
 
 </div>
 
+</div>
 </body>
 </html>
