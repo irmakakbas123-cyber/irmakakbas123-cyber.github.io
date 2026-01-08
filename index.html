@@ -1,24 +1,144 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-<meta charset="UTF-8">
-<title>CV - Irmak Akbaş</title>
+    <meta charset="UTF-8">
+    <title>CV - Irmak Akbaş</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
 
-<style>
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f2f2f2;
-}
+        .container {
+            display: flex;
+            width: 900px;
+            margin: 40px auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
 
-.cv {
-    display: flex;
-    max-width: 1100px;
-    margin: 30px auto;
-    background: white;
-}
+        /* SOL TARAF */
+        .left {
+            width: 35%;
+            background-color: #2f2f2f;
+            color: white;
+            padding: 30px;
+            box-sizing: border-box;
+        }
 
-/* SOL PANEL */
-.left {
-    width: 35%;
-    background: #3a
+        /* FOTO YERİ (BOŞ AMA KALACAK) */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #555; /* boş daire */
+            margin: 0 auto 20px auto;
+        }
+
+        .left h3 {
+            border-bottom: 1px solid #777;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .left p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* SAĞ TARAF */
+        .right {
+            width: 65%;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .right h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        .right h2 {
+            margin: 5px 0 20px 0;
+            font-size: 16px;
+            color: gray;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .skill {
+            margin: 10px 0;
+        }
+
+        .bar {
+            height: 6px;
+            background-color: #ccc;
+        }
+
+        .bar-fill {
+            height: 6px;
+            background-color: #555;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SOL -->
+    <div class="left">
+        <div class="profile-img"></div>
+
+        <h3>HAKKIMDA</h3>
+        <p>
+            Bilişim Sistemleri ve Teknolojileri öğrencisiyim.
+            Bilgisayar ve teknoloji dünyasına duyduğum ilgi,
+            bu alanda kendimi sürekli geliştirme motivasyonumu
+            beslemektedir. Öğrenmeye açık, araştırmayı seven
+            bir yapıya sahibim.
+        </p>
+    </div>
+
+    <!-- SAĞ -->
+    <div class="right">
+        <h1>IRMAK AKBAŞ</h1>
+        <h2>ÖĞRENCİ</h2>
+
+        <div class="section">
+            <h3>İŞ DENEYİMİ</h3>
+            <p>—</p>
+        </div>
+
+        <div class="section">
+            <h3>EĞİTİM</h3>
+            <p>Bilişim Sistemleri ve Teknolojileri (Lisans)<br>
+            2025 – Mersin</p>
+        </div>
+
+        <div class="section">
+            <h3>BECERİLER</h3>
+
+            <div class="skill">Yaratıcılık</div>
+            <div class="bar"><div class="bar-fill"></div></div>
+
+            <div class="skill">Uyarlanabilirlik</div>
+            <div class="bar"><div class="bar-fill"></div></div>
+
+            <div class="skill">Sorun Çözme</div>
+            <div class="bar"><div class="bar-fill"></div></div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
