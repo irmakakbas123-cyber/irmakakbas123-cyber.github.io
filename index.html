@@ -1,23 +1,206 @@
 <!DOCTYPE html>
 <html lang="tr">
-    <head>
-        <meta charset="UTF-8" />
-        <title>CSS Denemeler</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        
-        
-        <div id="wrapper">
-            <div class="mavi" style="background: purple !important;">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
-            </div>
-            <div class="yesil">
-                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.</p>
-            </div>
-            <div class="kirmizi">
-                <p>Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.</p>
-            </div>
+<head>
+<meta charset="UTF-8">
+<title>CV - Irmak Akbaş</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+.cv {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    background: white;
+}
+
+/* SOL PANEL */
+.left {
+    width: 35%;
+    background: #3a3a3a;
+    color: white;
+    padding: 30px;
+}
+
+.photo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h3 {
+    border-bottom: 1px solid #777;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.section p, .section li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.section ul {
+    padding-left: 18px;
+}
+
+/* SAĞ PANEL */
+.right {
+    width: 65%;
+    padding: 30px;
+}
+
+.name {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.job {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.right h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+.item {
+    margin-top: 15px;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.bar {
+    height: 6px;
+    background: #ddd;
+}
+
+.bar span {
+    display: block;
+    height: 6px;
+    background: #555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="cv">
+
+    <!-- SOL TARAF -->
+    <div class="left">
+
+        <div class="photo">
+            <img src="https://i.pravatar.cc/300" alt="Profil Fotoğrafı">
         </div>
-    </body>
+
+        <div class="section">
+            <h3>HAKKIMDA</h3>
+            <p>
+                Bilişim Sistemleri ve Teknolojileri öğrencisiyim. Bilgisayar ve teknoloji dünyasına duyduğum ilgi,
+                bu alanda kendimi sürekli geliştirme motivasyonumu beslemektedir. Öğrenmeye açık, araştırmayı seven
+                ve yeni teknolojileri takip etmeyi önemseyen bir yapıya sahibim. Web tasarım başta olmak üzere
+                bilişim alanında temel bilgi ve becerilerimi geliştirmeyi, edindiğim teorik bilgileri uygulamaya
+                dökerek kalıcı hale getirmeyi hedefliyorum. Disiplinli çalışma anlayışım ve sorumluluk bilincimle,
+                kendimi mesleki anlamda ileriye taşımayı amaçlayan bir öğrenciyim.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>BAĞLANTILAR</h3>
+            <p>Instagram: instagram.com/irmakakbas</p>
+            <p>GitHub: github.com/irmakakbas</p>
+            <p>Portfolio: irmakakbas.github.io</p>
+        </div>
+
+        <div class="section">
+            <h3>DİLLER</h3>
+            <ul>
+                <li>Türkçe</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>SÜRÜCÜ BELGESİ</h3>
+            <p>B1</p>
+        </div>
+
+        <div class="section">
+            <h3>REFERANSLAR</h3>
+        </div>
+
+    </div>
+
+    <!-- SAĞ TARAF -->
+    <div class="right">
+
+        <div class="name">IRMAK AKBAŞ</div>
+        <div class="job">ÖĞRENCİ</div>
+
+        <div class="info">
+            <div>📍 Mersin / Erdemli</div>
+            <div>📞 +90 533 543 5073</div>
+            <div>✉️ irmakakbas123@gmail.com</div>
+        </div>
+
+        <h2>İŞ DENEYİMİ</h2>
+        <!-- Bilerek boş -->
+
+        <h2>EĞİTİM</h2>
+        <div class="item">
+            <span>Bilişim Sistemleri ve Teknolojileri (Lisans)</span><br>
+            <small>2025 – Mersin</small>
+        </div>
+
+        <h2>BECERİLER</h2>
+
+        <div class="skill">Yaratıcılık
+            <div class="bar"><span style="width:80%"></span></div>
+        </div>
+
+        <div class="skill">Uyarlanabilirlik
+            <div class="bar"><span style="width:75%"></span></div>
+        </div>
+
+        <div class="skill">Sorun Çözme
+            <div class="bar"><span style="width:85%"></span></div>
+        </div>
+
+        <div class="skill">İletişim
+            <div class="bar"><span style="width:90%"></span></div>
+        </div>
+
+        <h2>HOBİLER</h2>
+        <p>Sinema • Müzik • Moda</p>
+
+    </div>
+
+</div>
+
+</body>
 </html>
